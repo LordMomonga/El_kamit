@@ -23,14 +23,14 @@ app.use('/students', router);
 //mon code secret
 const secretKey ='unSuperCodeDifficile'
 
-const port = 5000;
+//const port = 5000;
 
 const url = 'mongodb://127.0.0.1:27017/mydatabase'; // URL de connexion à la base de données
 
-mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
+/*mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => {
     app.listen(port, () =>  console.log(`Server is running on port ${port}`));
-}).catch ((error) => console.log(`${error} did not connect`));
+}).catch ((error) => console.log(`${error} did not connect`));*/
 
 //debut de l'api pour le maitre
 const ProfSchema = new mongoose.Schema({
@@ -378,7 +378,7 @@ app.post('/register', async (req, res) => {
 
 //ElkamitUser123
 //mongodb+srv://ElkamitUser:<password>@cluster0.6w0dmgu.mongodb.net/?retryWrites=true&w=majorit
-/*
+
 const PORT = process.env.PORT || 6001
 
 mongoose.connect(process.env.DATABASE_URL, {
@@ -386,4 +386,4 @@ mongoose.connect(process.env.DATABASE_URL, {
     useUnifiedTopology: true, 
 }).then(() => {
     app.listen(PORT, () =>  console.log(`Server is running on port ${PORT}`));
-}).catch ((error) => console.log(`${error} did not connect`));*/
+}).catch ((error) => console.log(`${error} did not connect`));
