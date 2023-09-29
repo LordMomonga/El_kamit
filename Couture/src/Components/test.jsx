@@ -14,7 +14,7 @@ const Test = () => {
       const userData = { name, password, status };
   
       try {
-        const response = await axios.post('http://localhost:5000/register', userData);
+        const response = await axios.post('https://el-kamit-back.vercel.app/register', userData);
         console.log(response.data.message);
       } catch (error) {
         console.error('Erreur lors de l\'enregistrement de l\'utilisateur :', error);
