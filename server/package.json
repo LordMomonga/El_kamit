@@ -16,6 +16,9 @@
   "scripts": {
     "start": "node server.js"
   },
+  "engines":{
+    "node": "14.x"
+  },
   "name": "server",
   "version": "1.0.0",
   "main": "server.js",
