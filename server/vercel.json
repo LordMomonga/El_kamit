@@ -1,12 +1,11 @@
 {
 "version":2,
   "name":"ElKamit",
-/*  "builds":[
+ "builds":[
     {
-      "src":"server.js",
-      "use":"@vercel/node"
+      
     }
-  ],*/
+  ],
   "routes":[
     {
       "src":"/(.*)",
